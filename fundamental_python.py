@@ -218,3 +218,81 @@ while perulangan <= 5 :
     perulangan += 1
     
 print("finish")
+
+
+#list
+print("listtttttttttttttttttt")
+
+item = [123, "galang", True]
+
+print(item)
+print(item[0:2])
+
+for isi in item :
+    print("isinya = ",isi) #untuk menampilakan isi yang apasa yang didalam item menggunakan perulangan
+    
+item.append("penambahan") #append digunakan untuk menbahakan item di dalam list
+print(item)
+
+item.insert(2, False) # insert ini juga untuk menbahakan item didalam list dengan memasukan bisa ditengah tengah
+print(item)
+
+item.pop(2) # pop untuk menghilakan item pada list dengan menggunakan index
+print(item)
+
+item.remove("galang") # remove untuk menghilakan item pada list langsung pada objeknya
+print(item)
+
+item2 = [2,1,4,3,7,6,5]
+item2.sort()  #untuk mengurutkan item di list
+print(item2)
+
+init_item2 = 0
+
+for number in item2 :
+    init_item2 = init_item2 + number # untuk menjumlakan item dalam list secara manual
+    # print(number)
+    
+print(init_item2)
+
+total = sum(item2) #menjumlahkan otem dalam list menggunkan fungsi python
+print(total)
+
+print(item2[-1]) # untuk mengetahui jumlah item palaing besar
+
+max_item2 = max(item2) # untuk mengetahui jumlah item palaing besar mnggunkan fungsi python
+print(max_item2)
+
+max2_item2 = item2[0]
+
+for number2 in item2 :
+    # print(number2)
+    if number2 > max2_item2 :
+        # print(number2)
+        # print(max2_item2)
+        max2_item2 = number2  
+        
+print(max2_item2)
+
+# tuppple itu permanen tidak dapat diubah
+
+item3 = (1,2,3)
+
+
+#dictonary
+
+user = {
+    "name" : "galang adi yoga",
+    "age" : 22,
+    "is_admin" : True
+}
+
+user["name"] = "adiossss"
+name = user["name"]
+temp = user.get("username", "yogsss")
+# name = user["user"]
+
+print("")
+print(name)
+print(temp)
+
